@@ -19,6 +19,7 @@ import za.co.riggaroo.datecountdown.data.entity.Event;
 import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -78,7 +79,7 @@ public class EventRepositoryImplTest {
                 .test()
                 .assertError(IllegalArgumentException.class);
 
-        verify(eventDao, never()).addEvent(null);
+        verify(eventDao, times(1)).addEvent(null);
     }
 
 }
