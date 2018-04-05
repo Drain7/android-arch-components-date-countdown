@@ -36,6 +36,7 @@ public class CountdownApplication extends Application implements HasActivityInje
             Timber.plant(new Timber.DebugTree());//TODO Install a Crashlytics tree in production
         }
         AppInjector.init(this);
+        //added a line for tesh
 
     }
 
