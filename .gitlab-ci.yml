@@ -1,0 +1,5 @@
+helloworld_job:
+  script: "echo Hello World The Build Is Starting!"
+
+assemble_job:
+  script: "./gradlew clean assemble"
