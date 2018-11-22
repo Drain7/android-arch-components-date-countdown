@@ -1,7 +1,6 @@
 
 before_script:
   - export ANDROID_HOME="$HOME/Library/Android/sdk"
-  - bundle install
 
 stages:
 - build
